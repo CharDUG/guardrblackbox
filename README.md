@@ -14,10 +14,12 @@ Install the Github plugin for Jenkins
 
 Install Composer using Drush
 
-> sudo drush dl composer-8.x-1.0-alpha10
-> sudo 755 /usr/share/drush/commands/composer
-> sudo find /usr/share/drush/commands/composer -type f -exec chmod 644 \{} \;
-> sudo find /usr/share/drush/commands/composer -type d -exec chmod 755 \{} \;
+```Shell
+sudo drush dl composer-8.x-1.0-alpha10
+sudo 755 /usr/share/drush/commands/composer
+sudo find /usr/share/drush/commands/composer -type f -exec chmod 644 \{} \;
+sudo find /usr/share/drush/commands/composer -type d -exec chmod 755 \{} \;
+```
 
 Create a new job in Jenkins
 
@@ -35,9 +37,11 @@ Create a new job in Jenkins
  * Build
     * Execute shell
 
-> drush cache-clear drush
-> drush composer install
-> ${WORKSPACE}/bin/behat
+```Shell
+drush cache-clear drush
+drush composer install
+${WORKSPACE}/bin/behat
+```
 
 * Post-build Actions
   * Delete workspace when build is done
