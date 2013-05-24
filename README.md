@@ -35,8 +35,6 @@ Create a new job in Jenkins
  * Build
     * Execute shell
 
-> #!/bin/sh -x
-
 > drush cache-clear drush
 > drush composer install
 > ${WORKSPACE}/bin/behat
