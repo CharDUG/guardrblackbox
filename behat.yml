@@ -3,7 +3,9 @@ default:
     features: 'features'
   extensions:
     Behat\MinkExtension\Extension:
-      goutte: ~
+      goutte: 
+        guzzle_parameters:
+          ssl.certificate_authority: false
       selenium2: ~
       base_url: https://drupal.org/project/guardr
     Drupal\DrupalExtension\Extension:
