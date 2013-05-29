@@ -5,6 +5,6 @@ default:
     Behat\MinkExtension\Extension:
       goutte: ~
       selenium2: ~
-      base_url: http://drupal.org/project/guardr
+      base_url: https://drupal.org/project/guardr
     Drupal\DrupalExtension\Extension:
       blackbox: ~
