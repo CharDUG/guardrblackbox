@@ -8,6 +8,9 @@ Example BDD test of Guardr project page
 Assumes the following are installed and working
 
  * Jenkins
+ * Jenkins plugins
+   * GitHub plugin
+   * Jenkins Workspace Cleanup Plugin
  * Drush
 
 Install the Github plugin for Jenkins
