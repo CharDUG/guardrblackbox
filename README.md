@@ -9,7 +9,6 @@ Assumes the following are installed and working
 
  * Jenkins
  * Jenkins plugins
-   * GitHub plugin
    * Jenkins Workspace Cleanup Plugin
  * Drush
 
